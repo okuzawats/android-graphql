@@ -1,0 +1,17 @@
+*.iml
+*.log
+*.apk
+*.jks
+*.keystore
+.gradle
+.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+output.json
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
