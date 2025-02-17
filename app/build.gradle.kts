@@ -57,3 +57,10 @@ dependencies {
   debugImplementation(libs.androidx.ui.tooling)
   debugImplementation(libs.androidx.ui.test.manifest)
 }
+
+apollo {
+  // Set the package name to use for the generated models
+  service("service") {
+    packageName.set("com.okuzawats.poke")
+  }
+}
