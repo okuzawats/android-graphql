@@ -15,6 +15,7 @@ import androidx.lifecycle.lifecycleScope
 import com.apollographql.apollo.ApolloClient
 import com.okuzawats.poke.ui.theme.PokeTheme
 import kotlinx.coroutines.launch
+import logcat.logcat
 
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,7 +40,9 @@ class MainActivity : ComponentActivity() {
         .query(VersionNameQuery())
         .execute()
 
-      println(response.data)
+      logcat {
+        "${response.data}"
+      }
     }
   }
 }
