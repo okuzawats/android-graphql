@@ -12,6 +12,7 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 apollo-runtime = { module = "com.apollographql.apollo:apollo-runtime", version = "4.1.1" }
 junit = { group = "junit", name = "junit", version = "4.13.2" }
 logcat = { group = "com.squareup.logcat", name = "logcat", version = "0.1" }
+startup = { group = "androidx.startup", name = "startup-runtime", version = "1.2.0" }
 
 [plugins]
 android-application = { id = "com.android.application", version = "8.8.1" }

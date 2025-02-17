@@ -54,6 +54,7 @@ dependencies {
   implementation(libs.androidx.material3)
   implementation(libs.apollo.runtime)
   implementation(libs.logcat)
+  implementation(libs.startup)
   testImplementation(libs.junit)
   debugImplementation(libs.androidx.ui.tooling)
   debugImplementation(libs.androidx.ui.test.manifest)
