@@ -17,9 +17,14 @@ import com.okuzawats.poke.ui.theme.PokeTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import logcat.logcat
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
+  @Inject
+  lateinit var apolloClient: ApolloClient
+
   override fun onCreate(
     savedInstanceState: Bundle?,
   ) {
@@ -36,13 +41,7 @@ class MainActivity : ComponentActivity() {
     }
 
     lifecycleScope.launch {
-      val apolloClient = ApolloClient.Builder()
-        .serverUrl("https://beta.pokeapi.co/graphql/v1beta")
-        .build()
-
-      val response = apolloClient
-        .query(VersionNameQuery())
-        .execute()
+      val response = apolloClient.query(VersionNameQuery()).execute()
 
       logcat {
         "${response.data}"
