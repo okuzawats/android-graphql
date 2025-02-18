@@ -13,10 +13,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
 import com.apollographql.apollo.ApolloClient
+import com.okuzawats.poke.logger.Logger
 import com.okuzawats.poke.ui.theme.PokeTheme
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
-import logcat.logcat
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -24,6 +24,9 @@ class MainActivity : ComponentActivity() {
 
   @Inject
   lateinit var apolloClient: ApolloClient
+
+  @Inject
+  lateinit var logger: Logger
 
   override fun onCreate(
     savedInstanceState: Bundle?,
@@ -42,10 +45,7 @@ class MainActivity : ComponentActivity() {
 
     lifecycleScope.launch {
       val response = apolloClient.query(VersionNameQuery()).execute()
-
-      logcat {
-        "${response.data}"
-      }
+      logger.v("${response.data}")
     }
   }
 }
