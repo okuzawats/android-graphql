@@ -14,9 +14,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
 import com.apollographql.apollo.ApolloClient
 import com.okuzawats.poke.ui.theme.PokeTheme
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import logcat.logcat
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
   override fun onCreate(
     savedInstanceState: Bundle?,
