@@ -10,6 +10,8 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 apollo-runtime = { module = "com.apollographql.apollo:apollo-runtime", version = "4.1.1" }
+hilt-android = { module = "com.google.dagger:hilt-android", version = "2.55" }
+hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version = "2.55" }
 junit = { group = "junit", name = "junit", version = "4.13.2" }
 logcat = { group = "com.squareup.logcat", name = "logcat", version = "0.1" }
 startup = { group = "androidx.startup", name = "startup-runtime", version = "1.2.0" }
@@ -17,5 +19,7 @@ startup = { group = "androidx.startup", name = "startup-runtime", version = "1.2
 [plugins]
 android-application = { id = "com.android.application", version = "8.8.1" }
 apollo-plugin = { id = "com.apollographql.apollo", version = "4.1.1" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version = "2.0.0" }
+hilt-plugin = { id = "com.google.dagger.hilt.android", version = "2.55" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version = "2.1.10" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version = "2.0.0" }
+ksp = { id = "com.google.devtools.ksp", version = "2.1.10-1.0.30" }

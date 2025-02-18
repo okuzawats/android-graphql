@@ -1,8 +1,10 @@
 plugins {
   alias(libs.plugins.android.application)
+  alias(libs.plugins.apollo.plugin)
+  alias(libs.plugins.hilt.plugin)
   alias(libs.plugins.kotlin.android)
   alias(libs.plugins.kotlin.compose)
-  alias(libs.plugins.apollo.plugin)
+  alias(libs.plugins.ksp)
 }
 
 android {
@@ -53,6 +55,8 @@ dependencies {
   implementation(libs.androidx.ui.tooling.preview)
   implementation(libs.androidx.material3)
   implementation(libs.apollo.runtime)
+  implementation(libs.hilt.android)
+  ksp(libs.hilt.compiler)
   implementation(libs.logcat)
   implementation(libs.startup)
   testImplementation(libs.junit)
