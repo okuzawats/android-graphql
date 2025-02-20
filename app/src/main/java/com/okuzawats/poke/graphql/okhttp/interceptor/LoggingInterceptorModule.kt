@@ -1,4 +1,4 @@
-package com.okuzawats.poke.graphql.okhttp
+package com.okuzawats.poke.graphql.okhttp.interceptor
 
 import dagger.Module
 import dagger.Provides

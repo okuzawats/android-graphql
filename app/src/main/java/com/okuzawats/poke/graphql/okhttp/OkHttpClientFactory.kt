@@ -1,5 +1,6 @@
 package com.okuzawats.poke.graphql.okhttp
 
+import com.okuzawats.poke.graphql.okhttp.interceptor.LoggingInterceptorQualifier
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import java.util.concurrent.TimeUnit
