@@ -1,20 +1,21 @@
-package com.okuzawats.poke.okhttp
+package com.okuzawats.poke.graphql.okhttp
 
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import okhttp3.OkHttpClient
+import okhttp3.Interceptor
 import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class OkHttpClientModule {
+class LoggingInterceptorModule {
+  @LoggingInterceptorQualifier
   @Provides
   @Singleton
-  fun provideOkHttpClient(
-    factory: OkHttpClientFactory,
-  ): OkHttpClient {
+  fun provideLoggingInterceptor(
+    factory: LoggingInterceptorFactory,
+  ): Interceptor {
     return factory.create()
   }
 }

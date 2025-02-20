@@ -1,4 +1,4 @@
-package com.okuzawats.poke.apollo
+package com.okuzawats.poke.graphql.apollo
 
 import com.apollographql.apollo.ApolloClient
 import com.apollographql.apollo.network.okHttpClient

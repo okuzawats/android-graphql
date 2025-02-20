@@ -1,4 +1,4 @@
-package com.okuzawats.poke.okhttp
+package com.okuzawats.poke.graphql.okhttp
 
 import javax.inject.Qualifier
 
