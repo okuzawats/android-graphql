@@ -5,11 +5,11 @@ import okhttp3.logging.HttpLoggingInterceptor
 import javax.inject.Inject
 
 /**
- * factory of [Interceptor] that logs request and response
+ * factory of [Interceptor] that logs request and response.
  */
 class LoggingInterceptorFactory @Inject constructor() {
   /**
-   * returns the instance of [Interceptor]
+   * returns the instance of [Interceptor].
    */
   fun create(): Interceptor {
     val httpLoggingInterceptor = HttpLoggingInterceptor()
