@@ -12,7 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
-import com.okuzawats.poke.domain.version.VersionRepository
+import com.okuzawats.poke.feature.version.VersionRepository
 import com.okuzawats.poke.logger.Logger
 import com.okuzawats.poke.ui.theme.PokeTheme
 import dagger.hilt.android.AndroidEntryPoint
