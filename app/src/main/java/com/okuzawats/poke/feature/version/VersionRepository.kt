@@ -1,4 +1,4 @@
-package com.okuzawats.poke.domain.version
+package com.okuzawats.poke.feature.version
 
 import com.apollographql.apollo.ApolloClient
 import com.apollographql.apollo.api.ApolloResponse

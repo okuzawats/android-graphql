@@ -1,4 +1,4 @@
-package com.okuzawats.poke.domain.version
+package com.okuzawats.poke.feature.version
 
 /**
  * exception when fetching version.
