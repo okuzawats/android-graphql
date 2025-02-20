@@ -12,7 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
-import com.apollographql.apollo.ApolloClient
+import com.okuzawats.poke.domain.version.VersionRepository
 import com.okuzawats.poke.logger.Logger
 import com.okuzawats.poke.ui.theme.PokeTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -23,7 +23,7 @@ import javax.inject.Inject
 class MainActivity : ComponentActivity() {
 
   @Inject
-  lateinit var apolloClient: ApolloClient
+  lateinit var versionRepository: VersionRepository
 
   @Inject
   lateinit var logger: Logger
@@ -44,8 +44,13 @@ class MainActivity : ComponentActivity() {
     }
 
     lifecycleScope.launch {
-      val response = apolloClient.query(VersionNameQuery()).execute()
-      logger.v("${response.data}")
+      versionRepository.fetch()
+        .onSuccess {
+          logger.v(it.toString())
+        }
+        .onFailure {
+          logger.v(it.message!!)
+        }
     }
   }
 }
