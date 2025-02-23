@@ -59,7 +59,6 @@ dependencies {
   implementation(libs.apollo.runtime)
   implementation(libs.hilt.android)
   ksp(libs.hilt.compiler)
-  implementation(libs.logcat)
   testImplementation(libs.junit)
   debugImplementation(libs.androidx.ui.tooling)
   debugImplementation(libs.androidx.ui.test.manifest)

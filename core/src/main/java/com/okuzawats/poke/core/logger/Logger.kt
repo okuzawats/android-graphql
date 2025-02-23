@@ -1,4 +1,4 @@
-package com.okuzawats.poke.logger
+package com.okuzawats.poke.core.logger
 
 /**
  * Logger

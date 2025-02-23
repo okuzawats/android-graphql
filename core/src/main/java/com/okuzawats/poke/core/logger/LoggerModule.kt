@@ -1,4 +1,4 @@
-package com.okuzawats.poke.logger
+package com.okuzawats.poke.core.logger
 
 import dagger.Binds
 import dagger.Module
@@ -7,7 +7,7 @@ import dagger.hilt.components.SingletonComponent
 
 @Module
 @InstallIn(SingletonComponent::class)
-abstract class LoggerModule {
+internal abstract class LoggerModule {
   @Binds
-  abstract fun bindLogger(impl: LoggerImpl): Logger
+  internal abstract fun bindLogger(impl: LoggerImpl): Logger
 }

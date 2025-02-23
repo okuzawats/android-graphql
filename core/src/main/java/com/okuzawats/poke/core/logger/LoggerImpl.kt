@@ -1,4 +1,4 @@
-package com.okuzawats.poke.logger
+package com.okuzawats.poke.core.logger
 
 import android.app.Application
 import android.content.Context
@@ -10,7 +10,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class LoggerImpl @Inject constructor(
+internal class LoggerImpl @Inject constructor(
   @ApplicationContext
   context: Context,
 ) : Logger {
