@@ -59,7 +59,6 @@ dependencies {
   implementation(libs.hilt.android)
   ksp(libs.hilt.compiler)
   implementation(libs.logcat)
-  implementation(libs.startup)
   testImplementation(libs.junit)
   debugImplementation(libs.androidx.ui.tooling)
   debugImplementation(libs.androidx.ui.test.manifest)
