@@ -9,5 +9,5 @@ import dagger.hilt.components.SingletonComponent
 @InstallIn(SingletonComponent::class)
 internal abstract class LoggerModule {
   @Binds
-  internal abstract fun bindLogger(impl: LoggerImpl): Logger
+  abstract fun bindLogger(impl: LoggerImpl): Logger
 }
