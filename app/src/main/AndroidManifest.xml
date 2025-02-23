@@ -14,7 +14,7 @@
       android:supportsRtl="true"
       android:theme="@style/Theme.Poke">
     <activity
-        android:name=".MainActivity"
+        android:name=".PokeActivity"
         android:exported="true"
         android:theme="@style/Theme.Poke">
       <intent-filter>

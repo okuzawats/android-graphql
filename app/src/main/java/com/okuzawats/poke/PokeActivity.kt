@@ -13,7 +13,7 @@ import com.okuzawats.poke.ui.theme.PokeTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : ComponentActivity() {
+class PokeActivity : ComponentActivity() {
 
   override fun onCreate(
     savedInstanceState: Bundle?,
