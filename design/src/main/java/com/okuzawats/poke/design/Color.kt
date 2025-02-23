@@ -1,4 +1,4 @@
-package com.okuzawats.poke.ui.theme
+package com.okuzawats.poke.design
 
 import androidx.compose.ui.graphics.Color
 

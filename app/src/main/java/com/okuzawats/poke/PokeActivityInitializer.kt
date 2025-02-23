@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.okuzawats.poke.ui.theme.PokeTheme
+import com.okuzawats.poke.design.PokeTheme
 import javax.inject.Inject
 
 /**
