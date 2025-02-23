@@ -29,3 +29,10 @@ dependencies {
   implementation(libs.okhttp.logging)
   testImplementation(libs.okhttp.mock)
 }
+
+apollo {
+  // Set the package name to use for the generated models
+  service("service") {
+    packageName.set("com.okuzawats.poke.api")
+  }
+}

@@ -2,7 +2,7 @@ package com.okuzawats.poke.feature.version
 
 import com.apollographql.apollo.ApolloClient
 import com.apollographql.apollo.api.ApolloResponse
-import com.okuzawats.poke.VersionNameQuery
+import com.okuzawats.poke.api.VersionNameQuery
 import dagger.Reusable
 import javax.inject.Inject
 

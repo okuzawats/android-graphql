@@ -1,6 +1,5 @@
 plugins {
   alias(libs.plugins.android.application)
-  alias(libs.plugins.apollo.plugin)
   alias(libs.plugins.hilt.plugin)
   alias(libs.plugins.kotlin.android)
   alias(libs.plugins.kotlin.compose)
@@ -62,11 +61,4 @@ dependencies {
   testImplementation(libs.junit)
   debugImplementation(libs.androidx.ui.tooling)
   debugImplementation(libs.androidx.ui.test.manifest)
-}
-
-apollo {
-  // Set the package name to use for the generated models
-  service("service") {
-    packageName.set("com.okuzawats.poke")
-  }
 }
