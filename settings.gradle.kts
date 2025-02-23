@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Poke"
 include(":app")
+include(":core")
 include(":api")
