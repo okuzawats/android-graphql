@@ -48,6 +48,7 @@ dependencies {
   implementation(project(":api"))
   implementation(project(":core"))
   implementation(project(":design"))
+  implementation(project(":feature:version"))
   implementation(libs.androidx.core.ktx)
   implementation(libs.androidx.lifecycle.runtime.ktx)
   implementation(libs.androidx.activity.compose)
