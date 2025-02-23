@@ -46,6 +46,7 @@ android {
 }
 
 dependencies {
+  implementation(project(":api"))
   implementation(libs.androidx.core.ktx)
   implementation(libs.androidx.lifecycle.runtime.ktx)
   implementation(libs.androidx.activity.compose)
@@ -58,10 +59,6 @@ dependencies {
   implementation(libs.hilt.android)
   ksp(libs.hilt.compiler)
   implementation(libs.logcat)
-  implementation(platform(libs.okhttp.bom))
-  implementation(libs.okhttp.core)
-  implementation(libs.okhttp.logging)
-  testImplementation(libs.okhttp.mock)
   implementation(libs.startup)
   testImplementation(libs.junit)
   debugImplementation(libs.androidx.ui.tooling)

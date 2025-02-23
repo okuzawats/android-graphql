@@ -1,4 +1,4 @@
-package com.okuzawats.poke.graphql.okhttp.interceptor
+package com.okuzawats.poke.api.okhttp.interceptor
 
 import okhttp3.Interceptor
 import okhttp3.logging.HttpLoggingInterceptor

@@ -1,6 +1,9 @@
 plugins {
   alias(libs.plugins.android.library)
+  alias(libs.plugins.apollo.plugin)
+  alias(libs.plugins.hilt.plugin)
   alias(libs.plugins.kotlin.android)
+  alias(libs.plugins.ksp)
 }
 
 android {
@@ -18,4 +21,11 @@ android {
 }
 
 dependencies {
+  implementation(libs.apollo.runtime)
+  implementation(libs.hilt.android)
+  ksp(libs.hilt.compiler)
+  implementation(platform(libs.okhttp.bom))
+  implementation(libs.okhttp.core)
+  implementation(libs.okhttp.logging)
+  testImplementation(libs.okhttp.mock)
 }

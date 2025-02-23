@@ -1,20 +1,20 @@
-package com.okuzawats.poke.graphql.apollo
+package com.okuzawats.poke.api.okhttp
 
-import com.apollographql.apollo.ApolloClient
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import okhttp3.OkHttpClient
 import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class ApolloClientModule {
+class OkHttpClientModule {
   @Provides
   @Singleton
-  fun provideApolloClient(
-    factory: ApolloClientFactory,
-  ): ApolloClient {
+  fun provideOkHttpClient(
+    factory: OkHttpClientFactory,
+  ): OkHttpClient {
     return factory.create()
   }
 }
