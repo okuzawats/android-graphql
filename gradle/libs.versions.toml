@@ -1,15 +1,9 @@
 [libraries]
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version = "1.10.0" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version = "2025.02.00" }
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version = "1.15.0" }
 androidx-hilt-navigation = { module = "androidx.hilt:hilt-navigation-compose", version = "1.2.0" }
-androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version = "2.8.7" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
-androidx-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
-androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
-androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
-androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 apollo-runtime = { module = "com.apollographql.apollo:apollo-runtime", version = "4.1.1" }
 hilt-android = { module = "com.google.dagger:hilt-android", version = "2.55" }
 hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version = "2.55" }

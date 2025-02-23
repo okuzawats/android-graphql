@@ -1,5 +1,6 @@
 package com.okuzawats.poke.feature.version
 
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
@@ -14,8 +15,8 @@ fun VersionScreen(
     viewModel.onEntered()
   }
 
-  Greeting(
-    name = "Android",
+  Text(
+    text = "Hello World!",
     modifier = modifier,
   )
 }
