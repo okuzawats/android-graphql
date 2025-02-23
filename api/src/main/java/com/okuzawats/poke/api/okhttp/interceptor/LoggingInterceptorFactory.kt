@@ -7,7 +7,7 @@ import javax.inject.Inject
 /**
  * factory of [Interceptor] that logs request and response.
  */
-class LoggingInterceptorFactory @Inject constructor() {
+internal class LoggingInterceptorFactory @Inject constructor() {
   /**
    * returns the instance of [Interceptor].
    */

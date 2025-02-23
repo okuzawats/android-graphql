@@ -9,7 +9,7 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class OkHttpClientModule {
+internal class OkHttpClientModule {
   @Provides
   @Singleton
   fun provideOkHttpClient(

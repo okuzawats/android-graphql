@@ -9,7 +9,7 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class ApolloClientModule {
+internal class ApolloClientModule {
   @Provides
   @Singleton
   fun provideApolloClient(

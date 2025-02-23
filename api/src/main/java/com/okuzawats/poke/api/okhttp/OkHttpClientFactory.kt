@@ -9,7 +9,7 @@ import javax.inject.Inject
 /**
  * factory of [OkHttpClient].
  */
-class OkHttpClientFactory @Inject constructor(
+internal class OkHttpClientFactory @Inject constructor(
   @LoggingInterceptorQualifier
   private val loggingInterceptor: Interceptor,
 ) {

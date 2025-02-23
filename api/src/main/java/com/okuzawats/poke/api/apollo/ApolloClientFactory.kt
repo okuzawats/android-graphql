@@ -10,7 +10,7 @@ private const val END_POINT_URL = "https://beta.pokeapi.co/graphql/v1beta"
 /**
  * factory of [ApolloClient].
  */
-class ApolloClientFactory @Inject constructor(
+internal class ApolloClientFactory @Inject constructor(
   private val okHttpClient: OkHttpClient,
 ) {
   /**
