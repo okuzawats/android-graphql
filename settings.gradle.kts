@@ -20,6 +20,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Poke"
+include(":api")
 include(":app")
 include(":core")
-include(":api")
+include(":design")
