@@ -1,9 +1,9 @@
-package com.okuzawats.poke
+package com.okuzawats.poke.navigation
 
 /**
  * routing.
  */
-enum class NavigationRoute {
+enum class PokeNavigationRoute {
   /**
    * main screen
    */
