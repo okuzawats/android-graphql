@@ -7,6 +7,9 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 
+/**
+ * main screen.
+ */
 @Composable
 fun MainScreen(
   modifier: Modifier = Modifier,
@@ -18,7 +21,9 @@ fun MainScreen(
 
   TextButton(
     modifier = modifier,
-    onClick = {},
+    onClick = {
+      viewModel.onTapMeTapped()
+    },
     content = {
       Text("tap me!")
     }
