@@ -27,7 +27,7 @@ class VersionViewModelTest {
   }
 
   @Test
-  fun onEntered() = runTest {
+  fun `failed to fetch version`() = runTest {
     coEvery {
       versionRepository.fetch()
     } returns Result.failure(
