@@ -18,8 +18,8 @@ okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor" 
 okhttp-mock = { group = "com.squareup.okhttp3", name = "mockwebserver" }
 
 [plugins]
-android-application = { id = "com.android.application", version = "8.8.1" }
-android-library = { id = "com.android.library", version = "8.8.1" }
+android-application = { id = "com.android.application", version = "8.8.2" }
+android-library = { id = "com.android.library", version = "8.8.2" }
 apollo-plugin = { id = "com.apollographql.apollo", version = "4.1.1" }
 hilt-plugin = { id = "com.google.dagger.hilt.android", version = "2.55" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version = "2.1.10" }
