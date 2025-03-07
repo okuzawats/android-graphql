@@ -10,6 +10,7 @@ import javax.inject.Inject
  */
 @HiltViewModel
 class MainViewModel @Inject constructor(
+  private val navigator: MainNavigator,
   private val logger: Logger,
 ) : ViewModel() {
   /**
@@ -23,6 +24,7 @@ class MainViewModel @Inject constructor(
    * on tapped tap me button.
    */
   fun onTapMeTapped() {
-
+    logger.v("onTapMeTapped")
+    navigator.navigateToNextPage()
   }
 }
