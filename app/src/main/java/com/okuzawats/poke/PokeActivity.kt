@@ -8,8 +8,12 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.okuzawats.feature.main.MainScreen
 import com.okuzawats.poke.design.PokeTheme
+import com.okuzawats.poke.feature.version.VersionScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -19,15 +23,23 @@ class PokeActivity : ComponentActivity() {
     enableEdgeToEdge()
     setContent {
       PokeTheme {
+        val navController = rememberNavController()
+
         Scaffold(
           modifier = Modifier.fillMaxSize(),
         ) { innerPadding ->
-//          VersionScreen(
-//            modifier = Modifier.padding(innerPadding),
-//          )
-          MainScreen(
+          NavHost(
+            navController = navController,
+            startDestination = NavigationRoute.Main.name,
             modifier = Modifier.padding(innerPadding),
-          )
+          ) {
+            composable(NavigationRoute.Main.name) {
+              MainScreen()
+            }
+            composable(NavigationRoute.Version.name) {
+              VersionScreen()
+            }
+          }
         }
       }
     }
