@@ -12,16 +12,23 @@ class PokeNavigator @Inject constructor(
 ) : MainNavigator {
   private var navHostController: NavHostController? = null
 
+  /**
+   * setup [navHostController] as navigation controller.
+   */
   fun setupNavHostController(
     navHostController: NavHostController
   ) {
     this.navHostController = navHostController
   }
 
+  /**
+   * teardown navigation controller.
+   */
   fun tearDownNavHostController() {
     this.navHostController = null
   }
 
+  /* MainNavigator */
   override fun navigateToNextPage() {
     logger.v("navigate to next page.")
     checkNotNull(navHostController).navigate(PokeNavigationRoute.Version.name)
