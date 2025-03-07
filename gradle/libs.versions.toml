@@ -8,6 +8,7 @@ apollo-runtime = { module = "com.apollographql.apollo:apollo-runtime", version =
 hilt-android = { module = "com.google.dagger:hilt-android", version = "2.55" }
 hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version = "2.55" }
 junit = { group = "junit", name = "junit", version = "4.13.2" }
+kotlinx-coroutins-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version = "1.10.1" }
 logcat = { group = "com.squareup.logcat", name = "logcat", version = "0.1" }
 mockk = { group = "io.mockk", name = "mockk", version = "1.13.17" }
 okhttp-bom = { group = "com.squareup.okhttp3", name = "okhttp-bom", version = "4.12.0" }
