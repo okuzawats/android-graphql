@@ -48,6 +48,7 @@ dependencies {
   implementation(project(":api"))
   implementation(project(":core"))
   implementation(project(":design"))
+  implementation(project(":feature:main"))
   implementation(project(":feature:version"))
   implementation(platform(libs.androidx.compose.bom))
   implementation(libs.androidx.activity.compose)
@@ -55,5 +56,4 @@ dependencies {
   implementation(libs.androidx.material3)
   implementation(libs.hilt.android)
   ksp(libs.hilt.compiler)
-  testImplementation(libs.junit)
 }
