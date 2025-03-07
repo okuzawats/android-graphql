@@ -7,11 +7,17 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+/**
+ * ViewModel for version screen.
+ */
 @HiltViewModel
 class VersionViewModel @Inject constructor(
   private val versionRepository: VersionRepository,
   private val logger: Logger,
 ) : ViewModel() {
+  /**
+   * on entered to version screen.
+   */
   fun onEntered() {
     viewModelScope.launch {
       versionRepository.fetch()

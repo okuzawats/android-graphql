@@ -6,6 +6,9 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 
+/**
+ * version screen.
+ */
 @Composable
 fun VersionScreen(
   modifier: Modifier = Modifier,
